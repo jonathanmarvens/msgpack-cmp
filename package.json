@@ -1,0 +1,22 @@
+{
+  "description": "An implementation of the MessagePack serialization format in C / msgpack.org[C]",
+
+  "keywords": [
+    "binary",
+    "deserialize",
+    "format",
+    "msgpack",
+    "serialize"
+  ],
+
+  "license": "MIT",
+  "name": "msgpack-cmp",
+  "repo": "jonathanmarvens/msgpack-cmp",
+
+  "src": [
+    "cmp.c",
+    "cmp.h"
+  ],
+
+  "version": "3.0.1"
+}
