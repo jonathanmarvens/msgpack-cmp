@@ -81,6 +81,10 @@ typedef struct cmp_object_s {
   union cmp_object_data_u as;
 } cmp_object_t;
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /*
  * ============================================================================
  * === Main API
@@ -346,7 +350,11 @@ bool cmp_read_ext16(cmp_ctx_t *ctx, int8_t *type, uint16_t *size, void *data);
 bool cmp_read_ext32_marker(cmp_ctx_t *ctx, int8_t *type, uint32_t *size);
 bool cmp_read_ext32(cmp_ctx_t *ctx, int8_t *type, uint32_t *size, void *data);
 
-#endif
+#ifdef __cplusplus
+}
+#endif /* extern "C" */
+
+#endif /* CMP_H__ */
 
 /* vi: set et ts=2 sw=2: */
 
